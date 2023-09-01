@@ -1,2 +1,6 @@
 dist/
 node_modules/
+fly.toml
+Dockerfile
+.dockerignore
+build_step.sh

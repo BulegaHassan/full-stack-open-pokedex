@@ -29,4 +29,9 @@ module.exports = {
     "react/prop-types": 0,
     "no-unused-vars": "error",
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };
