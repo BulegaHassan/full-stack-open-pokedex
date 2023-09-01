@@ -27,6 +27,11 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
+
+  deploy:
+   name: Deploy pokedex with render
+   runs-on: ubuntu-20.04
+   steps:        
       - name:  Render Deployment
         uses: bounceapp/render-action@0.6.0
         with:
