@@ -30,6 +30,7 @@ jobs:
 
   deploy:
    name: Deploy pokedex with render
+   if: ${{github.event_name == 'push'}}
    runs-on: ubuntu-20.04
    steps:        
       - name:  Render Deployment
