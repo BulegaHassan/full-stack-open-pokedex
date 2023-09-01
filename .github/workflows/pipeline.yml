@@ -27,3 +27,12 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
+      - name:  Render Deployment
+        uses: bounceapp/render-action@0.6.0
+        with:
+              render-token: ${{ secrets.RENDER_TOKEN }}
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+              service-id: ${{ secrets.RENDER_SERVICE_ID }}
+              retries: 50
+              wait: 8000
+              sleep: 0    
