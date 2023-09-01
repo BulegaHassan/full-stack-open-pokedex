@@ -16,5 +16,7 @@ app.get('/version', (req, res) => {
 })
 
 app.get('/health', (req, res) => {
-  res.send('<h1>ok, its healthy now</h1>')
+  throw "error...";
+  // eslint-disable-next-line no-unreachable
+  res.send("<h1>ok, its healthy now</h1>");
 })
