@@ -31,6 +31,7 @@ jobs:
           wait-on: http://localhost:5000
   tag_release:
     needs: [simple_deployment_pipeline]
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
@@ -38,6 +39,7 @@ jobs:
         uses: anothrNick/github-tag-action@1.64.0 
         env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+         DEFAULT_BUMP : patch
          
   deploy:
    name: Deploy pokedex with render
@@ -51,5 +53,5 @@ jobs:
           api-key: ${{ secrets.RENDER_TOKEN }}
           
 
-          
+
 
