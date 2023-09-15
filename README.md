@@ -13,3 +13,8 @@ Start by running `npm install` inside the project folder
 `npm run eslint` to run eslint
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
+
+- Certificate url: [https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/078987348055eb1395c433753fbdf74f]
+
+##### Certificate
+![certificate-ci/cd](https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/078987348055eb1395c433753fbdf74f)
